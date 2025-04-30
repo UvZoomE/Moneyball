@@ -1,0 +1,61 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.home-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: red;
+}
+
+.home-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #1b2d3e;
+}
+
+.app-logo {
+    padding: 0;
+    margin: 0;
+}
+
+.app-clock {
+    padding: 0;
+    margin: 0;
+}
+
+.notification-icon {
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.home-tabs {
+    background-color: #1b2d3e;
+}
+
+.home-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1b2d3e;
+    flex-grow: 2;
+}
+
+.home-footer {
+    background-color: #1b2d3e;
+    flex-grow: 1;
+}
+
+.home-footer h1 {
+    padding: 0;
+    margin: 0;
+}
