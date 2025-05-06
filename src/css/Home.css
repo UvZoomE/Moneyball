@@ -24,6 +24,7 @@ body {
 .app-logo {
     padding: 0;
     margin: 0;
+    color: white;
 }
 
 .app-clock {
@@ -50,12 +51,63 @@ body {
     flex-grow: 2;
 }
 
+.home-body h1 {
+    color: white;
+}
+
 .home-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #1b2d3e;
     flex-grow: 1;
 }
 
-.home-footer h1 {
-    padding: 0;
-    margin: 0;
+.legend {
+    color: #4DACFF;
+    text-decoration: underline;
 }
+
+.legend-table {
+    display: block;
+    background-color: white;
+    color: black;
+    /* max-height: 30vh; /* Adjust this value to your needs, e.g., 200px
+    overflow-y: auto; */
+  }
+
+  .orange-background-cell {
+    background-color: orange;
+    color: black;
+    font-weight: bold;
+  }
+
+  .blue-background-cell {
+    background-color: royalblue;
+    color: white;
+    font-weight: bold;
+  }
+
+  .lightblue-background-cell {
+    background-color: cadetblue;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .green-background-cell {
+    background-color: yellowgreen;
+    color: black;
+    font-weight: bolder;
+  }
+
+  .red-background-cell {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+  }
+
+  .purple-background-cell {
+    background-color: rebeccapurple;
+    color: white;
+    font-weight: bold;
+  }
