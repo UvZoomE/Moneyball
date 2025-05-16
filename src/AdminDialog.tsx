@@ -18,7 +18,7 @@ type Props = {
 const adminDialog = ({open, setDialogOpen, setUser, userInput}: Props) => {
 
     const [input, setInput] = useState({id: String(Math.random()*100000), name: "", email: ""})
-    console.log(input)
+
     const handleChange = (e) => {
         setInput({
             ...input,
