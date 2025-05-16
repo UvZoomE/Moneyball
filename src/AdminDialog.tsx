@@ -1,5 +1,6 @@
 import {RuxButton, RuxDialog, RuxInput} from "@astrouxds/react";
-import {useState, useRef} from "react";
+import {useState} from "react";
+import "./css/Admin.css";
 
 type User = {
     id: string;
@@ -13,34 +14,34 @@ type Props = {
     setUser: (newuser: Array<User>) => void;
     userInput: Array<User>;
 }
+
 const adminDialog = ({open, setDialogOpen, setUser, userInput}: Props) => {
 
-    const [input, setInput] = useState(userInput)
-
+    const [input, setInput] = useState({id: String(Math.random()*100000), name: "", email: ""})
+    console.log(input)
     const handleChange = (e) => {
-        console.log("here")
-        const value = e.target.value;
         setInput({
             ...input,
-            [e.target.name]: value
+            [e.target.id]: e.target.value
         });
         e.preventDefault();
     }
     const handleSubmit = () => {
         setUser(userInput.concat(input))
-
+        setDialogOpen(false)
+        setInput({id: String(Math.floor(Math.random()*100000)), name: "", email: ""})
     };
 
-    return (<RuxDialog open={open}>
+    return (<RuxDialog open={open} >
             <span slot="header">Add User</span>
-            <RuxInput label="name" type={"text"} placeholder="Enter Name" onChange = {handleChange} />
-            <RuxInput label="email" type={"email"} placeholder="Enter Email" onChange = {handleChange} />
+            <form onSubmit={handleSubmit}>
+            <RuxInput id="name" label="Name" type={"text"}  placeholder="Enter Name" onInput = {handleChange} />
+            <RuxInput id="email" label="Email" type={"email"} placeholder="Enter Email" onInput = {handleChange} />
             <div slot="footer">
-                <RuxButton>Test</RuxButton>
-                <RuxButton className="cancel-button" onClick={() => setDialogOpen(false)}>Cancel</RuxButton>
-                <RuxButton className="confirm-button" onClick = {handleSubmit}>Submit</RuxButton>
+                <RuxButton style={{padding: "2%"}} className="cancel-button" onClick={() => setDialogOpen(false)}>Cancel</RuxButton>
+                <RuxButton style={{padding: "2%"}} className="confirm-button" onClick = {handleSubmit}>Submit</RuxButton>
             </div>
-
+            </form>
     </RuxDialog>
     )}
 

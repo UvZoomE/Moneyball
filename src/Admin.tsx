@@ -11,8 +11,9 @@ import {
     RuxTableHeaderRow,
     RuxTableRow,
     RuxButton,
-    RuxInput, RuxTabs, RuxTab, RuxDialog
+    RuxTabs, RuxTab
 } from "@astrouxds/react";
+import AdminDialog from "./AdminDialog.tsx";
 
 const dummyAdminData = [{
     id: "12345",
@@ -45,7 +46,7 @@ const Admin = () => {
                     </RuxTabs>
                 </div>
 
-                <RuxButton className="add-button" onClick={() => setDialogOpen(true)}>Add Admin</RuxButton>
+                <RuxButton style={{padding: "2%"}} className="add-button" onClick={() => setDialogOpen(true)}>Add Admin</RuxButton>
                 <RuxTable className="admin-table">
                     <RuxTableHeader>
                         <RuxTableHeaderRow>
@@ -57,7 +58,7 @@ const Admin = () => {
                     <RuxTableBody>
                         {
                             adminData.map((admin, index) => (
-                                <RuxTableRow key={index}>
+                                <RuxTableRow className={"table-row"} key={index}>
                                     <RuxTableCell>{admin.name}</RuxTableCell>
                                     <RuxTableCell>{admin.email}</RuxTableCell>
                                     <RuxTableCell>
@@ -69,15 +70,7 @@ const Admin = () => {
                     </RuxTableBody>
                 </RuxTable>
             </div>
-            <RuxDialog open={dialogOpen}>
-                <span slot="header">Add User</span>
-                <RuxInput label="name" placeholder="Enter Name" />
-                <RuxInput label="email" placeholder="Enter Email" />
-                <div slot="footer">
-                    <RuxButton className="cancel-button" onClick={() => setDialogOpen(false)}>Cancel</RuxButton>
-                    <RuxButton className="confirm-button" onClick={() => setDialogOpen(false)}>Confirm</RuxButton>
-                </div>
-            </RuxDialog>
+            <AdminDialog setDialogOpen={setDialogOpen} open={dialogOpen} setUser={setAdminData} userInput={adminData}/>
         </div>
     );
 }
