@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.admin-container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 1fr;
+    min-width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #1b2d3e;
+}
+
+.admin-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    background-color: #1b2d3e;
+}
+
+.admin-body {
+    grid-row: 2;
+    padding: 3%
+}
+
+.admin-users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #1b2d3e;
+}
+
+.app-logo {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.app-clock {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
