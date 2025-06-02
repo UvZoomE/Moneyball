@@ -17,7 +17,70 @@ const Home = () => {
                 </RuxTabs>
             </div>
             <div className="home-body">
-                <h1>No Schedule Planned</h1>
+                <div className="weekly-schedule-table">
+                    <div className="weekly-schedule-header">
+                        <button className="add-events-button">Add Events +</button>
+                        <h1>13 FS Weekly Schedule</h1>
+                        <button className="submit-weekly-schedule">Submit</button>
+                    </div>
+                    <div className="weekly-schedule-body">
+                        <RuxTable>
+                            <RuxTableBody>
+                                <RuxTableRow>
+                                    <RuxTableCell>Aircraft</RuxTableCell>
+                                    <RuxTableCell>RL (%)</RuxTableCell>
+                                    <RuxTableCell>PH Time</RuxTableCell>
+                                    <RuxTableCell>SCL</RuxTableCell>
+                                    <RuxTableCell>Mon</RuxTableCell>
+                                    <RuxTableCell>Tue</RuxTableCell>
+                                    <RuxTableCell>Wed</RuxTableCell>
+                                    <RuxTableCell>Thur</RuxTableCell>
+                                    <RuxTableCell>Fri</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                                <RuxTableRow>
+                                    <RuxTableCell>94-0038</RuxTableCell>
+                                    <RuxTableCell>80</RuxTableCell>
+                                </RuxTableRow>
+                            </RuxTableBody>
+                        </RuxTable>
+                    </div>
+                </div>
             </div>
             <div slot="footer" className="home-footer">
             <h1 className="legend">Legend</h1>

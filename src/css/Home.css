@@ -46,7 +46,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
     background-color: #1b2d3e;
     flex-grow: 2;
 }
@@ -110,4 +109,31 @@ body {
     background-color: rebeccapurple;
     color: white;
     font-weight: bold;
+  }
+
+  .weekly-schedule-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .weekly-schedule-header h1 {
+    color: #4DACFF;
+  }
+
+  .add-events-button {
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    color: black;
+    background-color: #4DACFF;
+  }
+
+  .submit-weekly-schedule {
+    width: fit-content;
+    height: fit-content;
+    font-size: 24px;
+    color: black;
+    background-color: #4DACFF;
   }
