@@ -122,6 +122,17 @@ body {
     color: #4DACFF;
   }
 
+  .daily-schedule-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .daily-schedule-header h1 {
+    color: #4DACFF;
+  }
+
   .add-events-button {
     width: fit-content;
     height: fit-content;
@@ -136,4 +147,10 @@ body {
     font-size: 24px;
     color: black;
     background-color: #4DACFF;
+  }
+
+  .weekly-daily-schedule-table {
+    display: flex;
+    flex-direction: column;
+    gap: 100px
   }

@@ -1,5 +1,5 @@
 import "./css/Home.css";
-import {RuxClock, RuxIcon, RuxTab, RuxTable, RuxTableBody, RuxTableCell, RuxTableHeader, RuxTableHeaderCell, RuxTableHeaderRow, RuxTableRow, RuxTabs} from "@astrouxds/react";
+import {RuxClock, RuxIcon, RuxIconAirplanemodeActive, RuxTab, RuxTable, RuxTableBody, RuxTableCell, RuxTableHeader, RuxTableHeaderCell, RuxTableHeaderRow, RuxTableRow, RuxTabs} from "@astrouxds/react";
 
 const Home = () => {
     return (
@@ -12,73 +12,141 @@ const Home = () => {
             <div slot="tab-bar" className="home-tabs">
                 <RuxTabs id="tab-set-id-1">
                     <RuxTab id="tab-id-1" selected>Home</RuxTab>
-                    <RuxTab id="tab-id-2">Create Schedule</RuxTab>
                     <RuxTab id="tab-id-3">Settings</RuxTab>
                 </RuxTabs>
             </div>
             <div className="home-body">
-                <div className="weekly-schedule-table">
-                    <div className="weekly-schedule-header">
-                        <button className="add-events-button">Add Events +</button>
-                        <h1>13 FS Weekly Schedule</h1>
-                        <button className="submit-weekly-schedule">Submit</button>
+                <div className="weekly-daily-tables">
+                    <div className="weekly-schedule-table">
+                        <div className="weekly-schedule-header">
+                            <button className="add-events-button">Add Events +</button>
+                            <h1>13 FS Weekly Schedule</h1>
+                            <button className="submit-weekly-schedule">Submit</button>
+                        </div>
+                        <div className="weekly-schedule-body">
+                            <RuxTable>
+                                <RuxTableBody>
+                                    <RuxTableRow>
+                                        <RuxTableCell>Aircraft</RuxTableCell>
+                                        <RuxTableCell>RL (%)</RuxTableCell>
+                                        <RuxTableCell>PH Time</RuxTableCell>
+                                        <RuxTableCell>SCL</RuxTableCell>
+                                        <RuxTableCell>Mon</RuxTableCell>
+                                        <RuxTableCell>Tue</RuxTableCell>
+                                        <RuxTableCell>Wed</RuxTableCell>
+                                        <RuxTableCell>Thur</RuxTableCell>
+                                        <RuxTableCell>Fri</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                </RuxTableBody>
+                            </RuxTable>
+                        </div>
                     </div>
-                    <div className="weekly-schedule-body">
-                        <RuxTable>
-                            <RuxTableBody>
-                                <RuxTableRow>
-                                    <RuxTableCell>Aircraft</RuxTableCell>
-                                    <RuxTableCell>RL (%)</RuxTableCell>
-                                    <RuxTableCell>PH Time</RuxTableCell>
-                                    <RuxTableCell>SCL</RuxTableCell>
-                                    <RuxTableCell>Mon</RuxTableCell>
-                                    <RuxTableCell>Tue</RuxTableCell>
-                                    <RuxTableCell>Wed</RuxTableCell>
-                                    <RuxTableCell>Thur</RuxTableCell>
-                                    <RuxTableCell>Fri</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                                <RuxTableRow>
-                                    <RuxTableCell>94-0038</RuxTableCell>
-                                    <RuxTableCell>80</RuxTableCell>
-                                </RuxTableRow>
-                            </RuxTableBody>
-                        </RuxTable>
+                    <div className="daily-schedule-table">
+                        <div className="daily-schedule-header">
+                            <RuxIcon icon="flight" />
+                            <h1>13 FS Daily Schedule</h1>
+                            <div className="undo-redo">
+                                <RuxIcon icon="undo"/>
+                                <RuxIcon icon="redo"/>
+                            </div>
+                        </div>
+                        <div className="daily-schedule-body">
+                            <RuxTable>
+                                <RuxTableBody>
+                                    <RuxTableRow>
+                                        <RuxTableCell>Aircraft</RuxTableCell>
+                                        <RuxTableCell>RL (%)</RuxTableCell>
+                                        <RuxTableCell>PH Time</RuxTableCell>
+                                        <RuxTableCell>SCL</RuxTableCell>
+                                        <RuxTableCell>Mon</RuxTableCell>
+                                        <RuxTableCell>Tue</RuxTableCell>
+                                        <RuxTableCell>Wed</RuxTableCell>
+                                        <RuxTableCell>Thur</RuxTableCell>
+                                        <RuxTableCell>Fri</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                    <RuxTableRow>
+                                        <RuxTableCell>94-0038</RuxTableCell>
+                                        <RuxTableCell>80</RuxTableCell>
+                                    </RuxTableRow>
+                                </RuxTableBody>
+                            </RuxTable>
+                        </div>
                     </div>
                 </div>
             </div>
